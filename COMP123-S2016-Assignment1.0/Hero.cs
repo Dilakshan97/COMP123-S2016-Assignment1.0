@@ -67,27 +67,36 @@ namespace COMP123_S2016_Assignment1._0
 
             return random.Next(1, 7) * _strength;
         }
+        // HEROINFO+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        public void Heroinfo()
+        {
+            Console.WriteLine("Hero Name: Dilakshan");
+            Console.WriteLine("Hero Age: 18");
+            Console.WriteLine("Hero Super Power: Teleporting");
 
+        }
+
+        
         public void Fighting()
         {if (_hitAttempt() == true)
             
             {
                 _hitDamage();
-                Console.WriteLine("Hit Damage {0}", _strength);
+                Console.WriteLine("*************Hit Damage************ {0}", _strength);
             }
 
             else
              
-                Console.WriteLine("Hit Damage {0}", _strength);
+                Console.WriteLine("**************Hit Damage************: {0}", _strength);
             }
             
           
            //STRENGHT, HEALTH, SPEED+++++++++++++++++++++++++++++++++++++++++++     
             public void ShowAll()
         {
-            Console.WriteLine("Strength: {0}", _strength);
-            Console.WriteLine("Health: {0}", _health);
-            Console.WriteLine("Speed: {0}", _speed);
+            Console.WriteLine("**************Strength**************: {0}", _strength);
+            Console.WriteLine("**************Health****************: {0}", _health);
+            Console.WriteLine("**************Speed*****************: {0}", _speed);
 
         }
             public Hero(string name)
