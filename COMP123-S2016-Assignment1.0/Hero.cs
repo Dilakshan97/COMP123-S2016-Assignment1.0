@@ -18,7 +18,7 @@ namespace COMP123_S2016_Assignment1._0
     class Hero
     {
         //PRIVATE INSTANCE VARIABLES+++++++++++++++++++++++++++++++++++++++++++++++
-        private int _streanth;
+        private int _strength;
         private int _speed;
         private int _health;
         private string _name;
@@ -42,9 +42,33 @@ namespace COMP123_S2016_Assignment1._0
         private void _generateAblities()
         {
             Random random = new Random();
-            _streanth = random.Next(1, 101);
+            _strength = random.Next(1, 101);
             _speed = random.Next(1, 101);
             _health = random.Next(1, 101);
         }
+
+        private bool _hitAttempt()
+        {
+            Random random = new Random();
+            if (random.Next(1,100) <= 20)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
+        
+
+        //ADDED HITDAMAGE+++++++++++++++++++++++++++++++++++++++++++++++++
+        private int _hitDamage()
+        {
+            Random random = new Random();
+
+            return random.Next(1, 7) * _strength;
+        }
     }
+
 }
