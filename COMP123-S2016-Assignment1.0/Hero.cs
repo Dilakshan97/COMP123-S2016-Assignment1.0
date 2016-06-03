@@ -17,5 +17,10 @@ namespace COMP123_S2016_Assignment1._0
 {
     class Hero
     {
+        //PRIVATE INSTANCE VARIABLES+++++++++++++++++++++++++++++++++++++++++++++++
+        private int _streanth;
+        private int _speed;
+        private int _health;
+        private string _name;
     }
 }
