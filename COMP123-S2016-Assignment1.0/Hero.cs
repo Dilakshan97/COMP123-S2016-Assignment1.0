@@ -26,13 +26,11 @@ namespace COMP123_S2016_Assignment1._0
         public string Name
         {
             get
-            {
-                return _name;
+            {return _name;              
             }
 
             set
-            {
-                _name = value;
+            {_name = value;    
             }
 
         }
@@ -51,13 +49,13 @@ namespace COMP123_S2016_Assignment1._0
         {
             Random random = new Random();
             if (random.Next(1,100) <= 20)
-            {
-                return true;
+            {return true;
+           
             }
 
             else
-            {
-                return false;
+            {return false;
+                
             }
         }
         
@@ -71,8 +69,8 @@ namespace COMP123_S2016_Assignment1._0
         }
 
         public void Fighting()
-        {
-            if (_hitAttempt() == true)
+        {if (_hitAttempt() == true)
+            
             {
                 _hitDamage();
                 Console.WriteLine("Hit Damage {0}", _strength);
